@@ -46,6 +46,10 @@ and
 
 Yes, however I having some issues.
 
+**Why did you create this**
+
+This was created because I wanted to use Vega in my Android application. Vega is an amazing project, because it is an visualization grammar that can be used in many projects, regardless of their implementation language.
+
 **What is the license?**
 
 The license is [3-Clause BSD License](https://opensource.org/licenses/BSD-3-Clause)

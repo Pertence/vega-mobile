@@ -21,32 +21,32 @@ android {
     }
 }
 
+def localProperties = new Properties()
+localProperties.load(new FileInputStream(rootProject.file("github.properties")))
+
 afterEvaluate {
     publishing {
         publications {
-            // Creates a Maven publication called "release".
             release(MavenPublication) {
-                // Applies the component for the release build variant.
                 from components.release
-
-                // You can then customize attributes of the publication as shown below.
                 groupId = 'net.pertence.vega-mobile'
-                artifactId = 'final'
+                artifactId = 'release'
                 version = '1.0'
             }
-
-            // Creates a Maven publication called “debug”.
-            debug(MavenPublication) {
-                // Applies the component for the debug build variant.
-                from components.debug
-
-                groupId = 'net.pertence.vega-mobile'
-                artifactId = 'final-debug'
-                version = '1.0'
+        }
+        repositories {
+            maven {
+                name = "vega-mobile"
+                url = uri("https://maven.pkg.github.com/pertence/vega-mobile")
+                /*credentials {
+                    username = localProperties['GITHUB_USER_ID']
+                    password = localProperties['PERSONAL_ACCESS_TOKEN']
+                }*/
             }
         }
     }
 }
+
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])

@@ -22,20 +22,20 @@ For now, yes. The next task is adding a Java class that creates a json specifica
     
 2. Instatiate the view, for example in the onCreate()
 
-    @override
-    void onCreate(savedInstanceState: Bundle?) {
-        WebView vegaView = VegaView(applicationContext);
-        ...
+        @override
+        void onCreate(savedInstanceState: Bundle?) {
+            WebView vegaView = VegaView(applicationContext);
+            ...
 
 3. Load the json
 
-        String spec = "..."
-        vegaView.loadSpec(spec);
+            String spec = "..."
+            vegaView.loadSpec(spec);
         
 4. Set the view's content
 
-        setContentView(vegaView);
-    }
+            setContentView(vegaView);
+        }
     
 **How can I add this to my project?**
 

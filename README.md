@@ -50,7 +50,7 @@ and
 
     dependencies {
         ...
-        implementation 'com.github.pertence:vega_mobile:1.0'
+        implementation 'com.github.pertence:vega-mobile:1.0'
     }
   
 **Do you have any plans to publish in Jcenter?**

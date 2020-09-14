@@ -4,7 +4,7 @@ Disclaimer: this library is not endorsed and associated in any form and kind wit
 
 **What is this?**
 
-This is a wrapper for the [vega-embed](https://github.com/vega/vega-embed) library, and does not require an internet connection.
+This is an Android wrapper for the [vega-embed](https://github.com/vega/vega-embed) library, and does not require an internet connection.
 
 **How do this work?**
 

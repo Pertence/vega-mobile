@@ -21,9 +21,6 @@ android {
     }
 }
 
-def localProperties = new Properties()
-localProperties.load(new FileInputStream(rootProject.file("github.properties")))
-
 afterEvaluate {
     publishing {
         publications {
@@ -38,10 +35,6 @@ afterEvaluate {
             maven {
                 name = "vega-mobile"
                 url = uri("https://maven.pkg.github.com/pertence/vega-mobile")
-                /*credentials {
-                    username = localProperties['GITHUB_USER_ID']
-                    password = localProperties['PERSONAL_ACCESS_TOKEN']
-                }*/
             }
         }
     }
